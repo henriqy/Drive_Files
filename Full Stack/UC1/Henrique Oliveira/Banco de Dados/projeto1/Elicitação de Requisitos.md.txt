@@ -1,0 +1,76 @@
+# Entidades
+
+* Funcionários
+* Fornecedores
+* Clientes
+* Produtos
+* Departamento
+* Vendas
+
+---
+
+# Atributos
+
+### Funcionários
+> nome
+> cpf
+> qntd
+> departamento
+> genero
+
+### Fornecedores
+> nomeFornecedor
+
+### Clientes
+> nomeCliente
+> genero
+> qntd
+> cpf
+> telefone
+> endereço
+
+### Produtos
+> nomeProduto
+> descrição
+> id
+> valor
+
+### Departamento
+> nomeDepartamento
+
+### Vendas
+> qntd
+> id
+
+---
+
+# Organização dos requisitos
+
+* Cliente
+> Entidade forte: Cliente
+> Atributo indentificador: id
+> Atributo simples: nomeCliente, cpf
+> Atributo composto: endereço
+> Atributo multivalorado: telefone
+
+*Funcionario
+> Entidade forte: Funcionario
+> Atributo identificador: id
+> Atributo simples: nomeFuncionario, cpf
+> Atributo Composta: departamento
+> Atributo multivalorado: telefone
+
+*Fornecedores
+>Entidade forte: Fornecedores
+> Atributo simples: nomeFornecedor
+> Atributo multivalorado: telefone
+
+*Produto
+> Entidade forte: Produto
+> Atributo simples: nomeProduto, descrição, valor
+> Atributo identificador: id
+
+*Departamento
+> Entidade forte: Departamento
+> Atributo simples: nomeDepartamento
+> Atributo composto: endereço

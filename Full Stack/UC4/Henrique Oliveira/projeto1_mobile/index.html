@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <title>Sistema web com bootstrap</title>
+
+    <!-- CSS - Ínicio -->
+    <style>
+      .bg-secao-destaque {
+        background: url(assets/img/bg.png) no-repeat;
+        background-size: cover;
+      }
+      .diferenciais img {
+        width: 20rem;
+        height: 14rem;
+      }
+
+      .carousel {
+        border-radius: 10px;
+      }
+    </style>
+    <!-- CSS - Fim -->
+  </head>
+  <body>
+    <!-- Cabeçalho -->
+    <header class="container-fluid bg-dark fixed-top pt-2 pb-2">
+      <div class="container">
+        <div class="row d-flex align-items-center justify-content-between">
+          <!-- Barra de navegacao -->
+          <div class="col-2 text-start">
+            <nav class="navbar navbar-dark bg-dark">
+              <!-- botao -->
+              <div class="container-fluid">
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasDarkNavbar"
+                  aria-controls="offcanvasDarkNavbar"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                  class="offcanvas offcanvas-start text-bg-dark"
+                  tabindex="-1"
+                  id="offcanvasDarkNavbar"
+                  aria-labelledby="offcanvasDarkNavbarLabel"
+                >
+                  <!-- Cabecalho -->
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+                      Menu
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close btn-close-white"
+                      data-bs-dismiss="offcanvas"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+
+                  <!-- Corpo do Menu -->
+                  <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"
+                          >Home</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Diferencias</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Inscreva-se</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Faça seu Login</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+
+          <!-- Logomarca -->
+          <div class="col-2 text-center">
+            <img
+              src="./assets/img/bootstrap.png"
+              class="img-fluid"
+              alt="Logomarca"
+              width="50rem"
+            />
+          </div>
+
+          <!-- Campo de Busca -->
+          <div class="col-2 text-end">
+            <form class="d-flex" role="search">
+              <input
+                class="form-controlz"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- Seção Destaque - Ínicio -->
+      <section
+        class="container-fluid bg-secao-destaque text-center text-lg-start text-white pt-5"
+      >
+        <div class="container-fluid pt-5 pb-5">
+          <div class="row">
+            <div class="col-lg-6 col-12">
+              <h2 class="pt-5 pb-3">
+                Crie sites rápidos e responsivos com bootstrap
+              </h2>
+              <p class="pb-3">
+                Projete e personaliza rapidamente para dispostivos móveis com
+                bootstrap
+              </p>
+
+              <div class="pb-5">
+                <a href="#" class="btn btn-outline-primary">Iniciar Agora</a>
+                <a href="#" class="btn btn-outline-light">Conhecer Mais</a>
+              </div>
+            </div>
+            <div class="col-6"></div>
+          </div>
+        </div>
+      </section>
+      <!-- Seção Destaque - Fim -->
+
+      <!-- secao corrousel - Inicio -->
+      <section class="container-fluid mt-5 pt-5 pb-5 bg-light">
+        <div class="container">
+          <div
+            id="carouselExampleCaptions"
+            class="carousel slide carousel-fade"
+            data-bs-ride="carousel"
+            data-bs-interval="4475"
+          >
+            <!-- Butoes de Indicadores -->
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+
+            <!-- Imagens e textos do carroucel -->
+            <div class="carousel-inner rounded-3">
+              <div class="carousel-item active">
+                <a
+                  href="https://pt.wikipedia.org/wiki/Periquito-australiano"
+                  target="_blank"
+                >
+                  <img
+                    src="./assets/img/slid1.jpg"
+                    class="d-block w-100 rounded-3"
+                    alt="img-slide1"
+                  />
+                </a>
+                <div
+                  class="carousel-caption d-none d-md-block bg-dark rounded-3"
+                  style="--bs-bg-opacity: 0.5"
+                >
+                  <h5>Periquito-australiano</h5>
+                  <p>
+                    O periquito australiano é uma pequena espécie de ave de
+                    cauda longa.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./assets/img/slid2.jpg"
+                  class="d-block w-100 rounded-3"
+                  alt="img-slide2"
+                />
+                <div
+                  class="carousel-caption d-none d-md-block bg-dark rounded-3"
+                  style="--bs-bg-opacity: 0.5"
+                >
+                  <h5>Bem-te-vi</h5>
+                  <p>
+                    O bem-te-vi é uma ave passeriforme da família dos
+                    tiranídeos.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="/assets/img/slid3.jpg"
+                  class="d-block w-100 rounded-3"
+                  alt="img-slide3"
+                />
+                <div
+                  class="carousel-caption d-none d-md-block bg-dark rounded-3"
+                  style="--bs-bg-opacity: 0.5"
+                >
+                  <h5>Martim-pescador</h5>
+                  <p>
+                    O martim-pescador é uma ave que em geral tem penas de cores
+                    vivas.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Botao de navegacao anterior -->
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+
+            <!-- Botao de navegacao proximo -->
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- secao corrousel - Fim -->
+
+      <!-- Seção Diferenciais - Inicio -->
+      <section class="container-fluid diferenciais">
+        <div class="container d-flex justify-content-center pt-5">
+          <div class="row">
+            <!-- card 1 -->
+            <div
+              class="col-lg-4 col-12 text-center d-flex justify-content-center pb-3 pb-lg-0"
+            >
+              <div class="card border-primary" style="width: 20rem">
+                <img
+                  src="./assets/img/icon1.png"
+                  class="card-img-top img-fluid"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card title 1</h5>
+                  <p class="card-text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Nobis, tenetur molestias tempora repudiandae a voluptate
+                    nostrum eius explicabo eligendi assumenda officia aperiam
+                    aspernatur, nulla porro commodi iusto nisi? Maxime, minima.
+                  </p>
+                  <a href="#" class="btn btn-primary">Veja mais</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- card 2 -->
+            <div
+              class="col-lg-4 col-12 text-center d-flex justify-content-center pb-3 pb-lg-0"
+            >
+              <div class="card border-primary" style="width: 20rem">
+                <img
+                  src="./assets/img/icon2.png"
+                  class="card-img-top img-fluid"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card title 2</h5>
+                  <p class="card-text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Nobis, tenetur molestias tempora repudiandae a voluptate
+                    nostrum eius explicabo eligendi assumenda officia aperiam
+                    aspernatur, nulla porro commodi iusto nisi? Maxime, minima.
+                  </p>
+                  <a href="#" class="btn btn-primary">Veja mais</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- card 3 -->
+            <div
+              class="col-lg-4 col-12 text-center d-flex justify-content-center"
+            >
+              <div class="card border-primary" style="width: 20rem">
+                <img
+                  src="./assets/img/icon3.png"
+                  class="card-img-top img-fluid"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card title 1</h5>
+                  <p class="card-text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Nobis, tenetur molestias tempora repudiandae a voluptate
+                    nostrum eius explicabo eligendi assumenda officia aperiam
+                    aspernatur, nulla porro commodi iusto nisi? Maxime, minima.
+                  </p>
+                  <a href="#" class="btn btn-primary">Veja mais</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- secao deiferenciais - Fim -->
+
+      <!-- Secap Vantagens - Inicio -->
+      <section class="container-fluid pt-5 pb-5 bg-light">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7 col-12 align-self-center pb-3 pb-lg-0">
+              <img src="./assets/img/image1.png" class="img-fluid" alt="" />
+            </div>
+            <div class="col-lg-5 col-12 align-self-center">
+              <h3>Receba agora no seu email</h3>
+              <p>etapa para criacao de um sistema web eficiente</p>
+              <ul>
+                <li>Ouvir o cliente</li>
+                <li>Definir o publico alvo</li>
+                <li>Conteudo</li>
+                <li>Layout + Design</li>
+                <li>Codificacao</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Secap Vantagens - Fim -->
+
+      <!-- Seção Inscreva-se - Início -->
+      <section class="container-fluid inscreva-se pt-5 pb-5">
+        <div class="container pt-2 pb-2">
+          <div class="row justify-content-center mb-2">
+            <div class="col-lg-5 col-12 text-center">
+              <h4>Receba agora no seu e-mail</h4>
+              <p class="lead">
+                O Bootstrap te ajuda com os layouts dos seus projetos
+              </p>
+            </div>
+          </div>
+
+          <!-- Estrutura do formulário -->
+          <form action="" method="post" class="row justify-content-center">
+            <div class="col-lg-5 col-12 form-floating mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="floatingEmail"
+                placeholder="Informe o seu melhor e-mail"
+              />
+              <label for="floatingEmail" class="ms-2"
+                >Informe o seu melhor e-mail</label
+              >
+            </div>
+            <div class="col-lg-1 col-12 ps-lg-0 pt-2 pt-lg-2 text-center">
+              <button type="submit" class="btn btn-success col-12">
+                Receber
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <!-- Seção Inscreva-se - Fím -->
+    </main>
+    <footer class="container-fluid bg-dark">
+      <div class="container">
+        <!-- Logomarca -->
+        <div class="row justify-content-center">
+          <div class="col-12 text-center pt-3">
+            <img
+              src="assets/img/bootstrap.png"
+              class="img-fluid"
+              width="50rem"
+            />
+          </div>
+        </div>
+        <!-- Direitos reservados -->
+        <div class="row">
+          <div class="col-12 text-center text-white pt-2">
+            <p style="font-size: 0.9rem">
+              &copy; 2024 Bootstrap - O melhor framework web. Todos os direitos
+              reservados. Atualmente v5.3
+            </p>
+          </div>
+        </div>
+        <!-- Link_voltar ao início -->
+        <div class="row">
+          <div class="col-12 text-center">
+            <p><a href="#">Voltar ao início</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Adicionando o javascript do bootstrap -->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

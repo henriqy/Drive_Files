@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    color:black;
+    
+}
+
+.apresentacao{
+    margin: 8% 13%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.apresentacao__conteudo__titulo{
+    color: green;
+}
